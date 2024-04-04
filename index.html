@@ -2,26 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />  <!-- FavIcon -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- Font Awesome CDN -->
+
+  <link rel="stylesheet" href="style.css"> <!-- Main Style -->
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
+  
+    <header class="header">
+      <img src="assets/images/logo.svg" alt="Huddle Logo" class="logo-image" />
+    </header>
 
-  Build The Community Your Fans Will Love
+    <main class="content-wrapper">
+      <div class="hero">
+        <img src="assets/images/illustration-mockups.svg" alt="Ilustration Mockups" class="mockup-image" />
+      </div>
+      <div class="content">
+        
+        <h1>Build The Community Your Fans Will Love</h1>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion.</p> 
 
-  Register
+        <button class="btn">Register</button>
+
+      </div>
+
+    </main>
+
+
+    <div class="social-medias-container">
+          <i class="fa-brands fa-facebook-f circle"></i>
+          <i class="fa-brands fa-twitter circle"></i>
+          <i class="fa-brands fa-instagram circle"></i>
+        </div>
+
+  </div>
 
   <footer>
     <p class="attribution">
@@ -29,5 +52,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
 </body>
 </html>
