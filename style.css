@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 :root{
 	/*Typography*/
 	--poppins: "Poppins", sans-serif;
@@ -20,31 +13,33 @@
 	--violet: hsl(257, 40%, 49%);
 	--soft-magenta: hsl(300, 69%, 71%);
 	--white: hsl(0, 0%, 100%);
+}
 
-	/*Spacing*/
-/* 	--normal-padding: ; */
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-	background: var(--violet) url("assets/images/bg-desktop.svg");
+	background: var(--violet) url("assets/images/bg-desktop.svg") top;
 	height: 100vh;
 	background-size: cover;
 	color: var(--white);
 }
 
-.container {
+.container {border: 3px solid tomato;
 	max-width: 1440px;
-	padding: 30px 40px
+	padding: 20px 40px
 }
 
 .logo-image {
-	width: 182px;
+	width: 150px;
 }
 
 .content-wrapper {
 	display: flex;
-	margin-top: 50px;
+	margin-top: 20px;
 	width: 100%;
 }
 
@@ -53,8 +48,9 @@ body {
 }
 
 .mockup-image {
-	max-width: 100%;
+	max-width: 95%;
 }
+
 .content { 
 	padding-top: 40px;
 	padding-right: 50px;
@@ -99,7 +95,7 @@ body {
 	justify-content: flex-end;
 	align-items: flex-end;
 	padding-right: 40px;
-	
+	margin-top: 20px;
 }
 
 .circle {
@@ -119,10 +115,6 @@ body {
 	border-color: var(--soft-magenta);
 }
 
-
-
-
-
  .attribution { 
  	font-size: 11px; 
  	text-align: center; 
@@ -131,3 +123,44 @@ body {
  .attribution a { 
  	color: hsl(228, 45%, 44%); 
  }
+
+footer {
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width:600px) {
+
+	body {
+		background-image: url("assets/images/bg-mobile.svg");
+	}
+
+.content-wrapper {
+	display: block;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100%;
+	margin: 0px;
+	padding-top: 80px;
+}
+
+.content h1 {
+	text-align: center;
+}
+
+.content p { 
+	max-width: 400px;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+.social-medias-container { 
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+	
+}
